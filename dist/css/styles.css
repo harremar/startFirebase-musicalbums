@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+.musicContent {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+.musicContent .albumContent {
+  padding: 10px;
+  width: 82%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.musicContent .albumContent h1 {
+  font-family: sans-serif;
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  min-height: 30px;
+  margin-bottom: 10px;
+  top: 30px;
+  left: 20px;
+}
+.musicContent .albumContent .search {
+  position: absolute;
+  top: 30px;
+  right: 65px;
+  width: 220px;
+  height: 30px;
+  padding: 4px;
+  background-color: rgb(20, 20, 20);
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 2px;
+}
+.musicContent .albumContent .searchBtn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  height: 30px;
+  background-color: #574EFA;
+  border: none;
+  color: white;
+  border-radius: 2px;
+}
+.musicContent .albumContent .searchBtn:hover {
+  cursor: pointer;
+}
+.musicContent .albumContent .albumCovers {
+  padding: 10px;
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.musicContent .albumContent .albumCovers .albumBox {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(20, 20, 20);
+  border-radius: 5px;
+  margin: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.musicContent .albumContent .albumCovers .albumBox img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+.musicContent .albumContent .albumCovers .albumBox .overlay {
+  -webkit-transform: 0.3s ease;
+          transform: 0.3s ease;
+  display: none;
+  width: 100%;
+  height: 40%;
+  background-color: rgba(20, 20, 20, 0.9);
+  z-index: 5;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+}
+.musicContent .albumContent .albumCovers .albumBox .overlay h2 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+.musicContent .albumContent .albumCovers .albumBox .overlay h3 {
+  font-size: 12px;
+  padding: 0;
+  margin-top: 8px;
+  font-weight: lighter;
+}
+.musicContent .albumContent .albumCovers .albumBox .overlay p {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+}
+.musicContent .albumContent .albumCovers .albumBox:hover {
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(20, 20, 20);
+  border-radius: 5px;
+  margin: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.musicContent .albumContent .albumCovers .albumBox:hover img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+.musicContent .albumContent .albumCovers .albumBox:hover .overlay {
+  -webkit-transform: 0.3s ease;
+          transform: 0.3s ease;
+  display: block;
+  width: 100%;
+  height: 40%;
+  background-color: rgba(20, 20, 20, 0.9);
+  z-index: 5;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+}
+.musicContent .albumContent .albumCovers .albumBox:hover .overlay h2 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+.musicContent .albumContent .albumCovers .albumBox:hover .overlay h3 {
+  font-size: 12px;
+  padding: 0;
+  margin-top: 8px;
+  font-weight: lighter;
+}
+.musicContent .albumContent .albumCovers .albumBox:hover .overlay p {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+}
+.musicContent .sidebar {
+  width: 150px;
+  height: 100%;
+  /* background-color: #ededed; */
+  background-color: rgb(20, 20, 20);
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+.musicContent .sidebar .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85px;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+.musicContent .sidebar .icon img {
+  width: 30px;
+  height: 30px;
+}
+.musicContent .sidebar .genreOptions {
+  width: 60%;
+  height: 300px;
+  margin: 30px auto;
+}
+.musicContent .sidebar .genreOptions .genrebox {
+  width: 100px;
+  height: 70px;
+  border-radius: 5px;
+  color: white;
+  font-family: sans-serif;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.musicContent .sidebar .genreOptions .genrebox:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 830px) {
+  .musicContent {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    position: relative;
+  }
+  .musicContent .albumContent {
+    position: absolute;
+    left: 170px;
+    max-width: 470px;
+  }
+  .musicContent .albumContent .search {
+    top: 70px;
+    left: 20px;
+  }
+  .musicContent .albumContent .searchBtn {
+    top: 70px;
+    left: 220px;
+  }
+  .musicContent .albumContent .albumCovers {
+    margin-top: 50px;
+  }
+}

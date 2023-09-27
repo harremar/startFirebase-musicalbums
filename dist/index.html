@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beats- Music Albums</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <div class="navigation"></div>
+
+
+    <div class="musicContent">
+        <div class="sidebar">
+            <div class="icon">
+                
+                <img src="img/musicnote.png" alt="">
+                Beats
+            </div>
+
+            <div class="genreOptions">
+                <div class="genrebox" id="allSongs" style="background-color: #574EFA;">Show All</div>
+                <div class="genrebox" id="folk-pop" style="background-color: #B659F5;">Folk-Pop</div>
+
+
+                <div class="genrebox" id="pop-rock" style="background-color: #CA45DE;">Pop-Rock</div>
+                <div class="genrebox" id="country"
+                style="background-color: #fa4ecc;">Country</div>
+
+            </div>
+        </div>
+        <div class="albumContent">
+            <h1 id="albumType">All Genres</h1>
+            <input id="album-input" class="search" type="text" placeholder="search album name...">
+            <button class="searchBtn" id="searchBtn">Go</button>
+            <div class="albumCovers" id="allAlbums">
+                <div class="albumBox">
+                    <img src="img/busyhead.jpeg" alt="busyhead">
+                    <div class="overlay">
+                        <h2>Busyhead</h2>
+                        <h3>Noah Kahan</h3>
+                        <p>Genre: Folk-Pop</p>
+                    </div>
+                </div>
+                <div class="albumBox">
+                    <img src="img/myheadisananimal.jpg" alt="myheadisananimal">
+                    <div class="overlay">
+                        <h2>My Head Is an Animal</h2>
+                        <h3>Monsters of Men</h3>
+                        <p>Genre: Folk-Pop</p>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+</body>
+
+<script src="lib/jquery-3.7.1.min.js"></script>
+<script src="app/app.js"></script>
+</html>
